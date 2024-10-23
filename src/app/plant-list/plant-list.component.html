@@ -1,0 +1,60 @@
+<section id="garden">
+    <table class="plant-table">
+      <caption>Votre jardin</caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Nom de la plante</th>
+          <th>Espèce</th>
+          <th>Date de plantation</th>
+          <th>Dernier arrosage</th>
+          <th>Fréquence d'arrosage</th>
+          <th>Besoins en lumière</th>
+          <th>État de santé</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let plant of plants">
+            <td><img [src]="getImageUrl(plant)" width="100" alt="{{ plant.name }}"></td>
+          <td>{{ plant.name }}</td>
+          <td>{{ plant.species }}</td>
+          <td>{{ plant.plantedDate | date }}</td>
+          <td>{{ plant.lastWatered | date }}</td>
+          <td>{{ plant.waterFrequency }}</td>
+          <td>{{ plant.sunlightNeeds }}</td>
+          <td>{{ plant.isHealthy ? 'En bonne santé' : 'À surveiller' }}</td>
+          <td>
+            <button (click)="openEditForm(plant)">Modifier</button>
+            <button (click)="deletePlant(plant.id)">Supprimer</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Formulaire de modification -->
+    <div *ngIf="editingPlant" class="edit-form">
+        <h3>Modifier la plante</h3>
+        <form (ngSubmit)="updatePlant()">
+          <label for="name">Nom:</label>
+          <input type="text" id="name" [(ngModel)]="editingPlant.name" name="name" required>
+          
+          <label for="species">Espèce:</label>
+          <input type="text" id="species" [(ngModel)]="editingPlant.species" name="species" required>
+        
+          <label for="plantedDate">Date de plantation:</label>
+          <input type="date" id="plantedDate" [(ngModel)]="editingPlant.plantedDate" name="plantedDate" required>
+        
+          <label for="waterFrequency">Fréquence d'arrosage:</label>
+          <input type="text" id="waterFrequency" [(ngModel)]="editingPlant.waterFrequency" name="waterFrequency" required>
+        
+          <label for="sunlightNeeds">Besoins en lumière:</label>
+          <input type="text" id="sunlightNeeds" [(ngModel)]="editingPlant.sunlightNeeds" name="sunlightNeeds" required>
+        
+          <button type="submit">Mettre à jour</button>
+          <button type="button" (click)="closeEditForm()">Annuler</button>
+        </form>
+      </div>
+      
+  </section>
+  

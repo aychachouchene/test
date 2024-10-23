@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #e8f5e9; /* Vert très clair */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding par défaut */
+    font-family: Arial, sans-serif; /* Police par défaut pour tout le site */
+  }
+  

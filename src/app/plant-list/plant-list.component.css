@@ -1,0 +1,148 @@
+.plant-table {
+    width: 90%; /* Largeur du tableau */
+    margin: 50px auto; /* Centrer le tableau */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f9f4; /* Fond vert pastel */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    overflow: hidden; /* Pour appliquer les coins arrondis au contenu */
+  }
+  
+  .plant-table caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #629677; /* Vert doux pour le texte */
+  }
+  
+  .plant-table th, .plant-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #c6d8c4; /* Ligne de séparation douce */
+  }
+  
+  .plant-table th {
+    background-color: #e8f3ed; /* Fond des en-têtes en vert plus clair */
+    color: #4a6e58; /* Texte vert foncé */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+  
+  .plant-table td {
+    font-size: 1em;
+    color: #3e5641; /* Vert foncé pour le texte */
+  }
+  
+  .plant-table td img {
+    border-radius: 8px; /* Coins arrondis pour les images */
+  }
+  
+  .plant-table tbody tr:hover {
+    background-color: #e0f0e8; /* Survol vert pastel plus foncé */
+  }
+  
+  .plant-table a {
+    color: #8fb996; /* Lien en vert pastel */
+    text-decoration: none;
+  }
+  
+  .plant-table a:hover {
+    text-decoration: underline; /* Lien souligné au survol */
+  }
+  /* Style général pour les boutons */
+button {
+    padding: 10px 15px; /* Ajout d'un peu d'espace autour du texte */
+    font-size: 14px; /* Taille de police */
+    border: none; /* Suppression de la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+    margin: 5px; /* Espacement entre les boutons */
+}
+
+/* Style pour le bouton de mise à jour */
+button:nth-child(1) { /* Cible le premier bouton dans chaque cellule d'action */
+    background-color: #a8e6cf; /* Couleur de fond pastel vert */
+    color: #004d00; /* Couleur du texte */
+    transition: background-color 0.3s; /* Animation de transition pour le changement de couleur */
+}
+
+/* Style pour le bouton de mise à jour au survol */
+button:nth-child(1):hover {
+    background-color: #81c3b3; /* Couleur plus sombre au survol */
+}
+
+/* Style pour le bouton de suppression */
+button:nth-child(2) { /* Cible le deuxième bouton dans chaque cellule d'action */
+    background-color: #ff8e8e; /* Couleur de fond pastel rose */
+    color: #800000; /* Couleur du texte */
+    transition: background-color 0.3s; /* Animation de transition pour le changement de couleur */
+}
+
+/* Style pour le bouton de suppression au survol */
+button:nth-child(2):hover {
+    background-color: #ff5c5c; /* Couleur plus sombre au survol */
+}
+
+  /* Style général pour le formulaire de modification */
+.edit-form {
+    max-width: 500px; /* Largeur maximale du formulaire */
+    margin: 20px auto; /* Centrer le formulaire */
+    padding: 20px; /* Espacement interne */
+    background-color: #f0f9f4; /* Fond légèrement gris */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* Styles pour les étiquettes */
+  .edit-form label {
+    display: block; /* Permet d'afficher les étiquettes sur une nouvelle ligne */
+    margin-bottom: 5px; /* Espacement en dessous des étiquettes */
+    font-weight: bold; /* Mettre en gras les étiquettes */
+  }
+  
+  /* Styles pour les champs d'entrée */
+  .edit-form input[type="text"],
+  .edit-form input[type="date"] {
+    width: 100%; /* Prendre toute la largeur du conteneur */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement en dessous des champs */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 5px; /* Coins arrondis */
+    font-size: 1em; /* Taille de police */
+  }
+  
+  /* Style pour les boutons */
+  .edit-form button {
+    width: 48%; /* Pour que deux boutons tiennent sur la même ligne */
+    padding: 10px; /* Espacement autour du texte */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Change le curseur au survol */
+    margin: 5px 1%; /* Espacement entre les boutons */
+  }
+  
+  /* Style pour le bouton de mise à jour */
+  .edit-form button[type="submit"] {
+    background-color: #a8e6cf; /* Couleur de fond pastel vert */
+    color: #004d00; /* Couleur du texte */
+    transition: background-color 0.3s; /* Animation de transition */
+  }
+  
+  /* Style pour le bouton de mise à jour au survol */
+  .edit-form button[type="submit"]:hover {
+    background-color: #81c3b3; /* Couleur plus sombre au survol */
+  }
+  
+  /* Style pour le bouton d'annulation */
+  .edit-form button[type="button"] {
+    background-color: #ff8e8e; /* Couleur de fond pastel rose */
+    color: #800000; /* Couleur du texte */
+    transition: background-color 0.3s; /* Animation de transition */
+  }
+  
+  /* Style pour le bouton d'annulation au survol */
+  .edit-form button[type="button"]:hover {
+    background-color: #ff5c5c; /* Couleur plus sombre au survol */
+  }
+  

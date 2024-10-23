@@ -1,0 +1,41 @@
+<nav class="navbar">
+    <div class="container">
+      <!-- Logo à gauche -->
+      <div class="logo">
+        <img src="/assets/logo.png" alt="Logo " class="logo-img">
+      </div>
+      
+      <!-- Liste de navigation -->
+      <ul class="navbar-nav">
+        <!-- Lien vers la page d'accueil -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <!-- Lien vers la page "All" -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/plant-list" routerLinkActive="active">Garden</a>
+        </li>
+        <!-- Lien vers la page Tasks -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/plant-add" routerLinkActive="active">Add Plant</a>
+        </li>
+        <!-- Lien vers la page Contact -->
+        <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contactez-nous</a>
+        </li>
+       
+      </ul>
+
+      
+      
+    </div>
+
+    <!-- Zone de recherche -->
+    <form class="search-form">
+      <input class="search-input" type="search" placeholder="Search" aria-label="Search">
+      <button class="search-button" type="submit">Search</button>
+    </form>
+  </nav>

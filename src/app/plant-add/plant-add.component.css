@@ -1,0 +1,111 @@
+/* General page styling */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f0f9f4; /* Soft pastel green background */
+    color: #3e5641;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Take the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Titles styling */
+h1, h2 {
+    font-size: 2.5em;
+    color: #8fb996; /* Green for the titles */
+    font-weight: bold;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 0 auto 40px auto;
+    max-width: 500px;
+    color: #4a6e58;
+}
+
+strong {
+    color: #629677;
+}
+
+/* Unified form styling */
+form {
+    background-color: #e8f3ed; /* Light pastel green background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 400px; /* Width for the form */
+    width: 100%; /* Ensure it takes full width of the container */
+}
+
+/* Centering the form */
+.contact-form-container {
+    margin: 40px auto; /* Centers the forms */
+}
+
+/* Form title */
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #6f9779; /* Darker green for secondary headers */
+}
+
+/* Form label and input styling */
+label {
+    font-size: 1em;
+    color: #4a6e58; /* Green for labels */
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"], input[type="date"], select, textarea.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #c6d8c4; /* Light green border */
+    border-radius: 6px;
+    background-color: #f4f9f5; /* Pastel green background */
+    color: #4a6e58;
+    font-size: 1em;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Buttons */
+button, .submit-button {
+    padding: 10px 20px;
+    background-color: #8fb996; /* Green button */
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover, .submit-button:hover {
+    background-color: #6f9779; /* Darker green on hover */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Success message styling */
+.success-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d4edda; /* Soft light green background */
+    color: #155724; /* Dark green text */
+    border: 1px solid #c3e6cb; /* Light green border */
+    border-radius: 8px;
+    text-align: center;
+}
